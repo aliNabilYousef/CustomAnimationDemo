@@ -1,0 +1,11 @@
+/* 
+  Localizable.strings
+  TransitionAnimation
+
+  Created by Ali Youssef on 4/22/22.
+  
+*/
+"Hello" = "Hello in English";
+"Enjoy" = "Enjoy this carousel, slide your finger to see all the photos";
+"Contents" = "Isn't this cool?";
+"Animation Text" = "This text will trigger an animation of the image once clicked to show more content.";

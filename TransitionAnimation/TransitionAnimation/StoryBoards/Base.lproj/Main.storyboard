@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="10w-4s-uvp">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="TransitionAnimation" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KQl-Z8-91C" customClass="LPLabel" customModule="TransitionAnimation" customModuleProvider="target">
+                                <rect key="frame" x="186" y="442.5" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lsE-Yt-bJz" customClass="LPButton" customModule="TransitionAnimation" customModuleProvider="target">
+                                <rect key="frame" x="20" y="681" width="177" height="31"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="News"/>
+                                <connections>
+                                    <action selector="onFirstAnimationButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="cmR-mz-M13"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xEe-7D-kEZ" customClass="LPButton" customModule="TransitionAnimation" customModuleProvider="target">
+                                <rect key="frame" x="217" y="681" width="177" height="31"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Gallary"/>
+                                <connections>
+                                    <action selector="onSecondAnimationButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="JvK-NR-82p"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9Nv-mX-ao0" customClass="LPButton" customModule="TransitionAnimation" customModuleProvider="target">
+                                <rect key="frame" x="182" y="64" width="50" height="50"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="50" id="Z2O-Z7-ljf"/>
+                                    <constraint firstAttribute="height" constant="50" id="b4K-Ii-K4h"/>
+                                </constraints>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="💡"/>
+                                <connections>
+                                    <action selector="onThirdAnimationButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="7cH-kV-fS6"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="9Nv-mX-ao0" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="1Mw-fn-M6t"/>
+                            <constraint firstItem="xEe-7D-kEZ" firstAttribute="top" secondItem="lsE-Yt-bJz" secondAttribute="top" id="75R-T4-A0Q"/>
+                            <constraint firstItem="KQl-Z8-91C" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" id="8tU-mZ-5wE"/>
+                            <constraint firstItem="9Nv-mX-ao0" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="Fiv-S4-6HW"/>
+                            <constraint firstItem="xEe-7D-kEZ" firstAttribute="leading" secondItem="lsE-Yt-bJz" secondAttribute="trailing" constant="20" id="Hl2-px-SVO"/>
+                            <constraint firstItem="xEe-7D-kEZ" firstAttribute="width" secondItem="lsE-Yt-bJz" secondAttribute="width" id="I74-b3-iYa"/>
+                            <constraint firstItem="lsE-Yt-bJz" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="Ie2-Gt-cH5"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="lsE-Yt-bJz" secondAttribute="bottom" constant="150" id="YgP-tI-G5H"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="xEe-7D-kEZ" secondAttribute="trailing" constant="20" id="cLN-hw-yyy"/>
+                            <constraint firstItem="KQl-Z8-91C" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="lzy-i6-J2e"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="RVR-Li-ieN"/>
+                    <nil key="simulatedTopBarMetrics"/>
+                    <nil key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="firstAnimationButton" destination="lsE-Yt-bJz" id="bVQ-c3-vPU"/>
+                        <outlet property="helloLabel" destination="KQl-Z8-91C" id="cr1-7l-ikx"/>
+                        <outlet property="secondAnimationButton" destination="xEe-7D-kEZ" id="TJ3-GS-7z4"/>
+                        <outlet property="thirdAnimationButton" destination="9Nv-mX-ao0" id="NAK-s1-bbO"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="928.98550724637687" y="97.767857142857139"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="Owz-nu-USF">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" navigationBarHidden="YES" id="10w-4s-uvp" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <nil key="simulatedTopBarMetrics"/>
+                    <nil key="simulatedBottomBarMetrics"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="kwp-uq-aWu">
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="E2e-65-mi8"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="gPc-Kj-81v" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="18.840579710144929" y="97.767857142857139"/>
+        </scene>
+    </scenes>
+    <designables>
+        <designable name="9Nv-mX-ao0">
+            <size key="intrinsicContentSize" width="44" height="31"/>
+        </designable>
+        <designable name="KQl-Z8-91C">
+            <size key="intrinsicContentSize" width="41.5" height="20.5"/>
+        </designable>
+        <designable name="lsE-Yt-bJz">
+            <size key="intrinsicContentSize" width="60" height="31"/>
+        </designable>
+        <designable name="xEe-7D-kEZ">
+            <size key="intrinsicContentSize" width="69" height="31"/>
+        </designable>
+    </designables>
+</document>
